@@ -48,6 +48,8 @@
             this.gbSexo = new System.Windows.Forms.GroupBox();
             this.rdbMasculino = new System.Windows.Forms.RadioButton();
             this.rdbFemenino = new System.Windows.Forms.RadioButton();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.gbCondicionEmocional.SuspendLayout();
             this.gbSexo.SuspendLayout();
             this.SuspendLayout();
@@ -101,12 +103,11 @@
             // lblSexo
             // 
             this.lblSexo.AutoSize = true;
-            this.lblSexo.Location = new System.Drawing.Point(93, 201);
+            this.lblSexo.Location = new System.Drawing.Point(91, 201);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(32, 15);
             this.lblSexo.TabIndex = 7;
             this.lblSexo.Text = "Sexo";
-            this.lblSexo.Click += new System.EventHandler(this.lblSexo_Click);
             // 
             // cboCiudadEvaluacion
             // 
@@ -119,7 +120,7 @@
             "BELLO",
             "EVIGADO ",
             "LA ESTRELLA"});
-            this.cboCiudadEvaluacion.Location = new System.Drawing.Point(248, 222);
+            this.cboCiudadEvaluacion.Location = new System.Drawing.Point(249, 227);
             this.cboCiudadEvaluacion.Name = "cboCiudadEvaluacion";
             this.cboCiudadEvaluacion.Size = new System.Drawing.Size(338, 23);
             this.cboCiudadEvaluacion.TabIndex = 8;
@@ -250,11 +251,32 @@
             this.rdbFemenino.Text = "Femenino";
             this.rdbFemenino.UseVisualStyleBackColor = true;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(522, 435);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(117, 39);
+            this.btnGuardar.TabIndex = 20;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(374, 435);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(117, 39);
+            this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
             // FormularioEvaluacionActividadFisica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 486);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.gbSexo);
             this.Controls.Add(this.gbCondicionEmocional);
             this.Controls.Add(this.lblCondicionEmocional);
@@ -304,5 +326,7 @@
         private GroupBox gbSexo;
         private RadioButton rdbMasculino;
         private RadioButton rdbFemenino;
+        private Button btnGuardar;
+        private Button btnCancelar;
     }
 }
