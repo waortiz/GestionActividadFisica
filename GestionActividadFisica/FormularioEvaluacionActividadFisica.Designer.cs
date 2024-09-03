@@ -28,305 +28,502 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtpFechaEvaluacion = new System.Windows.Forms.DateTimePicker();
-            this.lblFechaEvaluacion = new System.Windows.Forms.Label();
-            this.chkDiabetes = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.chkCancer = new System.Windows.Forms.CheckBox();
-            this.lblSexo = new System.Windows.Forms.Label();
-            this.cboCiudadEvaluacion = new System.Windows.Forms.ComboBox();
-            this.lblCiudadEvaluacion = new System.Windows.Forms.Label();
-            this.lblPeso = new System.Windows.Forms.Label();
-            this.txtPeso = new System.Windows.Forms.TextBox();
-            this.txtTalla = new System.Windows.Forms.TextBox();
-            this.lblTalla = new System.Windows.Forms.Label();
-            this.lblCondicionEmocional = new System.Windows.Forms.Label();
-            this.rdbAlegre = new System.Windows.Forms.RadioButton();
-            this.rdbNormal = new System.Windows.Forms.RadioButton();
-            this.rdbTriste = new System.Windows.Forms.RadioButton();
-            this.gbCondicionEmocional = new System.Windows.Forms.GroupBox();
-            this.gbSexo = new System.Windows.Forms.GroupBox();
-            this.rdbMasculino = new System.Windows.Forms.RadioButton();
-            this.rdbFemenino = new System.Windows.Forms.RadioButton();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.gbCondicionEmocional.SuspendLayout();
-            this.gbSexo.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // dtpFechaEvaluacion
-            // 
-            this.dtpFechaEvaluacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaEvaluacion.Location = new System.Drawing.Point(244, 78);
-            this.dtpFechaEvaluacion.Name = "dtpFechaEvaluacion";
-            this.dtpFechaEvaluacion.Size = new System.Drawing.Size(338, 23);
-            this.dtpFechaEvaluacion.TabIndex = 0;
-            // 
-            // lblFechaEvaluacion
-            // 
-            this.lblFechaEvaluacion.AutoSize = true;
-            this.lblFechaEvaluacion.Location = new System.Drawing.Point(93, 86);
-            this.lblFechaEvaluacion.Name = "lblFechaEvaluacion";
-            this.lblFechaEvaluacion.Size = new System.Drawing.Size(98, 15);
-            this.lblFechaEvaluacion.TabIndex = 1;
-            this.lblFechaEvaluacion.Text = "Fecha evaluación";
-            // 
-            // chkDiabetes
-            // 
-            this.chkDiabetes.AutoSize = true;
-            this.chkDiabetes.Location = new System.Drawing.Point(249, 134);
-            this.chkDiabetes.Name = "chkDiabetes";
-            this.chkDiabetes.Size = new System.Drawing.Size(71, 19);
-            this.chkDiabetes.TabIndex = 2;
-            this.chkDiabetes.Text = "Diabetes";
-            this.chkDiabetes.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Antecedentes";
-            // 
-            // chkCancer
-            // 
-            this.chkCancer.AutoSize = true;
-            this.chkCancer.Location = new System.Drawing.Point(353, 135);
-            this.chkCancer.Name = "chkCancer";
-            this.chkCancer.Size = new System.Drawing.Size(63, 19);
-            this.chkCancer.TabIndex = 4;
-            this.chkCancer.Text = "Cáncer";
-            this.chkCancer.UseVisualStyleBackColor = true;
-            // 
-            // lblSexo
-            // 
-            this.lblSexo.AutoSize = true;
-            this.lblSexo.Location = new System.Drawing.Point(91, 201);
-            this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(32, 15);
-            this.lblSexo.TabIndex = 7;
-            this.lblSexo.Text = "Sexo";
-            // 
-            // cboCiudadEvaluacion
-            // 
-            this.cboCiudadEvaluacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCiudadEvaluacion.FormattingEnabled = true;
-            this.cboCiudadEvaluacion.Items.AddRange(new object[] {
-            "MEDELLÍN",
-            "CALI",
-            "SABANETA",
-            "BELLO",
-            "EVIGADO ",
-            "LA ESTRELLA"});
-            this.cboCiudadEvaluacion.Location = new System.Drawing.Point(249, 227);
-            this.cboCiudadEvaluacion.Name = "cboCiudadEvaluacion";
-            this.cboCiudadEvaluacion.Size = new System.Drawing.Size(338, 23);
-            this.cboCiudadEvaluacion.TabIndex = 8;
-            // 
-            // lblCiudadEvaluacion
-            // 
-            this.lblCiudadEvaluacion.AutoSize = true;
-            this.lblCiudadEvaluacion.Location = new System.Drawing.Point(93, 230);
-            this.lblCiudadEvaluacion.Name = "lblCiudadEvaluacion";
-            this.lblCiudadEvaluacion.Size = new System.Drawing.Size(105, 15);
-            this.lblCiudadEvaluacion.TabIndex = 9;
-            this.lblCiudadEvaluacion.Text = "Ciudad Evaluación";
-            // 
-            // lblPeso
-            // 
-            this.lblPeso.AutoSize = true;
-            this.lblPeso.Location = new System.Drawing.Point(93, 280);
-            this.lblPeso.Name = "lblPeso";
-            this.lblPeso.Size = new System.Drawing.Size(32, 15);
-            this.lblPeso.TabIndex = 10;
-            this.lblPeso.Text = "Peso";
-            // 
-            // txtPeso
-            // 
-            this.txtPeso.Location = new System.Drawing.Point(249, 272);
-            this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(338, 23);
-            this.txtPeso.TabIndex = 11;
-            // 
-            // txtTalla
-            // 
-            this.txtTalla.Location = new System.Drawing.Point(249, 316);
-            this.txtTalla.Name = "txtTalla";
-            this.txtTalla.Size = new System.Drawing.Size(338, 23);
-            this.txtTalla.TabIndex = 13;
-            // 
-            // lblTalla
-            // 
-            this.lblTalla.AutoSize = true;
-            this.lblTalla.Location = new System.Drawing.Point(93, 324);
-            this.lblTalla.Name = "lblTalla";
-            this.lblTalla.Size = new System.Drawing.Size(30, 15);
-            this.lblTalla.TabIndex = 12;
-            this.lblTalla.Text = "Talla";
-            // 
-            // lblCondicionEmocional
-            // 
-            this.lblCondicionEmocional.AutoSize = true;
-            this.lblCondicionEmocional.Location = new System.Drawing.Point(93, 376);
-            this.lblCondicionEmocional.Name = "lblCondicionEmocional";
-            this.lblCondicionEmocional.Size = new System.Drawing.Size(121, 15);
-            this.lblCondicionEmocional.TabIndex = 14;
-            this.lblCondicionEmocional.Text = "Condición emocional";
-            // 
-            // rdbAlegre
-            // 
-            this.rdbAlegre.AutoSize = true;
-            this.rdbAlegre.Location = new System.Drawing.Point(54, 22);
-            this.rdbAlegre.Name = "rdbAlegre";
-            this.rdbAlegre.Size = new System.Drawing.Size(59, 19);
-            this.rdbAlegre.TabIndex = 15;
-            this.rdbAlegre.TabStop = true;
-            this.rdbAlegre.Text = "Alegre";
-            this.rdbAlegre.UseVisualStyleBackColor = true;
-            // 
-            // rdbNormal
-            // 
-            this.rdbNormal.AutoSize = true;
-            this.rdbNormal.Location = new System.Drawing.Point(142, 22);
-            this.rdbNormal.Name = "rdbNormal";
-            this.rdbNormal.Size = new System.Drawing.Size(65, 19);
-            this.rdbNormal.TabIndex = 16;
-            this.rdbNormal.TabStop = true;
-            this.rdbNormal.Text = "Normal";
-            this.rdbNormal.UseVisualStyleBackColor = true;
-            // 
-            // rdbTriste
-            // 
-            this.rdbTriste.AutoSize = true;
-            this.rdbTriste.Location = new System.Drawing.Point(232, 22);
-            this.rdbTriste.Name = "rdbTriste";
-            this.rdbTriste.Size = new System.Drawing.Size(52, 19);
-            this.rdbTriste.TabIndex = 17;
-            this.rdbTriste.TabStop = true;
-            this.rdbTriste.Text = "Triste";
-            this.rdbTriste.UseVisualStyleBackColor = true;
-            // 
-            // gbCondicionEmocional
-            // 
-            this.gbCondicionEmocional.Controls.Add(this.rdbAlegre);
-            this.gbCondicionEmocional.Controls.Add(this.rdbTriste);
-            this.gbCondicionEmocional.Controls.Add(this.rdbNormal);
-            this.gbCondicionEmocional.Location = new System.Drawing.Point(249, 354);
-            this.gbCondicionEmocional.Name = "gbCondicionEmocional";
-            this.gbCondicionEmocional.Size = new System.Drawing.Size(338, 52);
-            this.gbCondicionEmocional.TabIndex = 18;
-            this.gbCondicionEmocional.TabStop = false;
-            // 
-            // gbSexo
-            // 
-            this.gbSexo.Controls.Add(this.rdbMasculino);
-            this.gbSexo.Controls.Add(this.rdbFemenino);
-            this.gbSexo.Location = new System.Drawing.Point(249, 173);
-            this.gbSexo.Name = "gbSexo";
-            this.gbSexo.Size = new System.Drawing.Size(338, 43);
-            this.gbSexo.TabIndex = 19;
-            this.gbSexo.TabStop = false;
-            // 
-            // rdbMasculino
-            // 
-            this.rdbMasculino.AutoSize = true;
-            this.rdbMasculino.Location = new System.Drawing.Point(181, 14);
-            this.rdbMasculino.Name = "rdbMasculino";
-            this.rdbMasculino.Size = new System.Drawing.Size(80, 19);
-            this.rdbMasculino.TabIndex = 8;
-            this.rdbMasculino.TabStop = true;
-            this.rdbMasculino.Text = "Masculino";
-            this.rdbMasculino.UseVisualStyleBackColor = true;
-            // 
-            // rdbFemenino
-            // 
-            this.rdbFemenino.AutoSize = true;
-            this.rdbFemenino.Location = new System.Drawing.Point(77, 14);
-            this.rdbFemenino.Name = "rdbFemenino";
-            this.rdbFemenino.Size = new System.Drawing.Size(78, 19);
-            this.rdbFemenino.TabIndex = 7;
-            this.rdbFemenino.TabStop = true;
-            this.rdbFemenino.Text = "Femenino";
-            this.rdbFemenino.UseVisualStyleBackColor = true;
+            btnGuardar = new Button();
+            btnCancelar = new Button();
+            gbDatosBasicos = new GroupBox();
+            gbEvaluacion = new GroupBox();
+            gbCondicionEmocional = new GroupBox();
+            rdbAlegre = new RadioButton();
+            rdbTriste = new RadioButton();
+            rdbNormal = new RadioButton();
+            lblCondicionEmocional = new Label();
+            txtTalla = new TextBox();
+            lblTalla = new Label();
+            txtPeso = new TextBox();
+            lblPeso = new Label();
+            lblCiudadEvaluacion = new Label();
+            cboCiudadEvaluacion = new ComboBox();
+            chkCancer = new CheckBox();
+            label1 = new Label();
+            chkDiabetes = new CheckBox();
+            lblFechaEvaluacion = new Label();
+            dtpFechaEvaluacion = new DateTimePicker();
+            lblPrimerNombre = new Label();
+            txtPrimerNombre = new TextBox();
+            txtSegundoNombre = new TextBox();
+            lblSegundoNombre = new Label();
+            txtSegundoApellido = new TextBox();
+            lblSegundoApellido = new Label();
+            txtPrimerApellido = new TextBox();
+            lblPrimerApellido = new Label();
+            lblTipoDocumento = new Label();
+            cboTipoDocumento = new ComboBox();
+            txtNumeroDocumento = new TextBox();
+            lblNumeroDocumento = new Label();
+            lblFechaNacimiento = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            gbSexo = new GroupBox();
+            rdbMasculino = new RadioButton();
+            rdbFemenino = new RadioButton();
+            lblSexo = new Label();
+            gbDatosBasicos.SuspendLayout();
+            gbEvaluacion.SuspendLayout();
+            gbCondicionEmocional.SuspendLayout();
+            gbSexo.SuspendLayout();
+            SuspendLayout();
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(522, 435);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(117, 39);
-            this.btnGuardar.TabIndex = 20;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            btnGuardar.Location = new Point(1311, 636);
+            btnGuardar.Margin = new Padding(3, 4, 3, 4);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(134, 52);
+            btnGuardar.TabIndex = 20;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(374, 435);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(117, 39);
-            this.btnCancelar.TabIndex = 21;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Location = new Point(1150, 636);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(134, 52);
+            btnCancelar.TabIndex = 21;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // gbDatosBasicos
+            // 
+            gbDatosBasicos.Controls.Add(gbSexo);
+            gbDatosBasicos.Controls.Add(lblSexo);
+            gbDatosBasicos.Controls.Add(lblFechaNacimiento);
+            gbDatosBasicos.Controls.Add(dateTimePicker1);
+            gbDatosBasicos.Controls.Add(txtNumeroDocumento);
+            gbDatosBasicos.Controls.Add(lblNumeroDocumento);
+            gbDatosBasicos.Controls.Add(lblTipoDocumento);
+            gbDatosBasicos.Controls.Add(cboTipoDocumento);
+            gbDatosBasicos.Controls.Add(txtSegundoApellido);
+            gbDatosBasicos.Controls.Add(lblSegundoApellido);
+            gbDatosBasicos.Controls.Add(txtPrimerApellido);
+            gbDatosBasicos.Controls.Add(lblPrimerApellido);
+            gbDatosBasicos.Controls.Add(txtSegundoNombre);
+            gbDatosBasicos.Controls.Add(lblSegundoNombre);
+            gbDatosBasicos.Controls.Add(txtPrimerNombre);
+            gbDatosBasicos.Controls.Add(lblPrimerNombre);
+            gbDatosBasicos.Location = new Point(62, 47);
+            gbDatosBasicos.Name = "gbDatosBasicos";
+            gbDatosBasicos.Size = new Size(680, 530);
+            gbDatosBasicos.TabIndex = 22;
+            gbDatosBasicos.TabStop = false;
+            gbDatosBasicos.Text = "Datos Básicos";
+            // 
+            // gbEvaluacion
+            // 
+            gbEvaluacion.Controls.Add(gbCondicionEmocional);
+            gbEvaluacion.Controls.Add(lblCondicionEmocional);
+            gbEvaluacion.Controls.Add(txtTalla);
+            gbEvaluacion.Controls.Add(lblTalla);
+            gbEvaluacion.Controls.Add(txtPeso);
+            gbEvaluacion.Controls.Add(lblPeso);
+            gbEvaluacion.Controls.Add(lblCiudadEvaluacion);
+            gbEvaluacion.Controls.Add(cboCiudadEvaluacion);
+            gbEvaluacion.Controls.Add(chkCancer);
+            gbEvaluacion.Controls.Add(label1);
+            gbEvaluacion.Controls.Add(chkDiabetes);
+            gbEvaluacion.Controls.Add(lblFechaEvaluacion);
+            gbEvaluacion.Controls.Add(dtpFechaEvaluacion);
+            gbEvaluacion.Location = new Point(763, 47);
+            gbEvaluacion.Name = "gbEvaluacion";
+            gbEvaluacion.Size = new Size(682, 530);
+            gbEvaluacion.TabIndex = 23;
+            gbEvaluacion.TabStop = false;
+            gbEvaluacion.Text = "Evaluación";
+            // 
+            // gbCondicionEmocional
+            // 
+            gbCondicionEmocional.Controls.Add(rdbAlegre);
+            gbCondicionEmocional.Controls.Add(rdbTriste);
+            gbCondicionEmocional.Controls.Add(rdbNormal);
+            gbCondicionEmocional.Location = new Point(217, 351);
+            gbCondicionEmocional.Margin = new Padding(3, 4, 3, 4);
+            gbCondicionEmocional.Name = "gbCondicionEmocional";
+            gbCondicionEmocional.Padding = new Padding(3, 4, 3, 4);
+            gbCondicionEmocional.Size = new Size(386, 69);
+            gbCondicionEmocional.TabIndex = 33;
+            gbCondicionEmocional.TabStop = false;
+            // 
+            // rdbAlegre
+            // 
+            rdbAlegre.AutoSize = true;
+            rdbAlegre.Location = new Point(62, 30);
+            rdbAlegre.Margin = new Padding(3, 4, 3, 4);
+            rdbAlegre.Name = "rdbAlegre";
+            rdbAlegre.Size = new Size(74, 24);
+            rdbAlegre.TabIndex = 15;
+            rdbAlegre.TabStop = true;
+            rdbAlegre.Text = "Alegre";
+            rdbAlegre.UseVisualStyleBackColor = true;
+            // 
+            // rdbTriste
+            // 
+            rdbTriste.AutoSize = true;
+            rdbTriste.Location = new Point(265, 30);
+            rdbTriste.Margin = new Padding(3, 4, 3, 4);
+            rdbTriste.Name = "rdbTriste";
+            rdbTriste.Size = new Size(65, 24);
+            rdbTriste.TabIndex = 17;
+            rdbTriste.TabStop = true;
+            rdbTriste.Text = "Triste";
+            rdbTriste.UseVisualStyleBackColor = true;
+            // 
+            // rdbNormal
+            // 
+            rdbNormal.AutoSize = true;
+            rdbNormal.Location = new Point(162, 30);
+            rdbNormal.Margin = new Padding(3, 4, 3, 4);
+            rdbNormal.Name = "rdbNormal";
+            rdbNormal.Size = new Size(80, 24);
+            rdbNormal.TabIndex = 16;
+            rdbNormal.TabStop = true;
+            rdbNormal.Text = "Normal";
+            rdbNormal.UseVisualStyleBackColor = true;
+            // 
+            // lblCondicionEmocional
+            // 
+            lblCondicionEmocional.AutoSize = true;
+            lblCondicionEmocional.Location = new Point(47, 384);
+            lblCondicionEmocional.Name = "lblCondicionEmocional";
+            lblCondicionEmocional.Size = new Size(150, 20);
+            lblCondicionEmocional.TabIndex = 32;
+            lblCondicionEmocional.Text = "Condición emocional";
+            // 
+            // txtTalla
+            // 
+            txtTalla.Location = new Point(217, 299);
+            txtTalla.Margin = new Padding(3, 4, 3, 4);
+            txtTalla.Name = "txtTalla";
+            txtTalla.Size = new Size(386, 27);
+            txtTalla.TabIndex = 31;
+            // 
+            // lblTalla
+            // 
+            lblTalla.AutoSize = true;
+            lblTalla.Location = new Point(47, 306);
+            lblTalla.Name = "lblTalla";
+            lblTalla.Size = new Size(39, 20);
+            lblTalla.TabIndex = 30;
+            lblTalla.Text = "Talla";
+            // 
+            // txtPeso
+            // 
+            txtPeso.Location = new Point(217, 237);
+            txtPeso.Margin = new Padding(3, 4, 3, 4);
+            txtPeso.Name = "txtPeso";
+            txtPeso.Size = new Size(386, 27);
+            txtPeso.TabIndex = 29;
+            // 
+            // lblPeso
+            // 
+            lblPeso.AutoSize = true;
+            lblPeso.Location = new Point(47, 244);
+            lblPeso.Name = "lblPeso";
+            lblPeso.Size = new Size(39, 20);
+            lblPeso.TabIndex = 28;
+            lblPeso.Text = "Peso";
+            // 
+            // lblCiudadEvaluacion
+            // 
+            lblCiudadEvaluacion.AutoSize = true;
+            lblCiudadEvaluacion.Location = new Point(45, 181);
+            lblCiudadEvaluacion.Name = "lblCiudadEvaluacion";
+            lblCiudadEvaluacion.Size = new Size(131, 20);
+            lblCiudadEvaluacion.TabIndex = 27;
+            lblCiudadEvaluacion.Text = "Ciudad Evaluación";
+            // 
+            // cboCiudadEvaluacion
+            // 
+            cboCiudadEvaluacion.FormattingEnabled = true;
+            cboCiudadEvaluacion.Items.AddRange(new object[] { "MEDELLÍN", "CALI", "SABANETA", "BELLO", "EVIGADO ", "LA ESTRELLA" });
+            cboCiudadEvaluacion.Location = new Point(217, 178);
+            cboCiudadEvaluacion.Margin = new Padding(3, 4, 3, 4);
+            cboCiudadEvaluacion.Name = "cboCiudadEvaluacion";
+            cboCiudadEvaluacion.Size = new Size(386, 28);
+            cboCiudadEvaluacion.TabIndex = 26;
+            // 
+            // chkCancer
+            // 
+            chkCancer.AutoSize = true;
+            chkCancer.Location = new Point(338, 114);
+            chkCancer.Margin = new Padding(3, 4, 3, 4);
+            chkCancer.Name = "chkCancer";
+            chkCancer.Size = new Size(76, 24);
+            chkCancer.TabIndex = 24;
+            chkCancer.Text = "Cáncer";
+            chkCancer.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(45, 118);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 20);
+            label1.TabIndex = 23;
+            label1.Text = "Antecedentes";
+            // 
+            // chkDiabetes
+            // 
+            chkDiabetes.AutoSize = true;
+            chkDiabetes.Location = new Point(217, 114);
+            chkDiabetes.Margin = new Padding(3, 4, 3, 4);
+            chkDiabetes.Name = "chkDiabetes";
+            chkDiabetes.Size = new Size(90, 24);
+            chkDiabetes.TabIndex = 22;
+            chkDiabetes.Text = "Diabetes";
+            chkDiabetes.UseVisualStyleBackColor = true;
+            // 
+            // lblFechaEvaluacion
+            // 
+            lblFechaEvaluacion.AutoSize = true;
+            lblFechaEvaluacion.Location = new Point(45, 44);
+            lblFechaEvaluacion.Name = "lblFechaEvaluacion";
+            lblFechaEvaluacion.Size = new Size(122, 20);
+            lblFechaEvaluacion.TabIndex = 21;
+            lblFechaEvaluacion.Text = "Fecha evaluación";
+            // 
+            // dtpFechaEvaluacion
+            // 
+            dtpFechaEvaluacion.Format = DateTimePickerFormat.Short;
+            dtpFechaEvaluacion.Location = new Point(217, 39);
+            dtpFechaEvaluacion.Margin = new Padding(3, 4, 3, 4);
+            dtpFechaEvaluacion.Name = "dtpFechaEvaluacion";
+            dtpFechaEvaluacion.Size = new Size(386, 27);
+            dtpFechaEvaluacion.TabIndex = 20;
+            // 
+            // lblPrimerNombre
+            // 
+            lblPrimerNombre.AutoSize = true;
+            lblPrimerNombre.Location = new Point(40, 50);
+            lblPrimerNombre.Name = "lblPrimerNombre";
+            lblPrimerNombre.Size = new Size(108, 20);
+            lblPrimerNombre.TabIndex = 0;
+            lblPrimerNombre.Text = "Primer nombre";
+            // 
+            // txtPrimerNombre
+            // 
+            txtPrimerNombre.Location = new Point(235, 43);
+            txtPrimerNombre.Name = "txtPrimerNombre";
+            txtPrimerNombre.Size = new Size(386, 27);
+            txtPrimerNombre.TabIndex = 1;
+            // 
+            // txtSegundoNombre
+            // 
+            txtSegundoNombre.Location = new Point(235, 97);
+            txtSegundoNombre.Name = "txtSegundoNombre";
+            txtSegundoNombre.Size = new Size(386, 27);
+            txtSegundoNombre.TabIndex = 3;
+            // 
+            // lblSegundoNombre
+            // 
+            lblSegundoNombre.AutoSize = true;
+            lblSegundoNombre.Location = new Point(40, 104);
+            lblSegundoNombre.Name = "lblSegundoNombre";
+            lblSegundoNombre.Size = new Size(124, 20);
+            lblSegundoNombre.TabIndex = 2;
+            lblSegundoNombre.Text = "Segundo nombre";
+            // 
+            // txtSegundoApellido
+            // 
+            txtSegundoApellido.Location = new Point(235, 200);
+            txtSegundoApellido.Name = "txtSegundoApellido";
+            txtSegundoApellido.Size = new Size(386, 27);
+            txtSegundoApellido.TabIndex = 7;
+            // 
+            // lblSegundoApellido
+            // 
+            lblSegundoApellido.AutoSize = true;
+            lblSegundoApellido.Location = new Point(40, 207);
+            lblSegundoApellido.Name = "lblSegundoApellido";
+            lblSegundoApellido.Size = new Size(111, 20);
+            lblSegundoApellido.TabIndex = 6;
+            lblSegundoApellido.Text = "Primer apellido";
+            // 
+            // txtPrimerApellido
+            // 
+            txtPrimerApellido.Location = new Point(235, 146);
+            txtPrimerApellido.Name = "txtPrimerApellido";
+            txtPrimerApellido.Size = new Size(386, 27);
+            txtPrimerApellido.TabIndex = 5;
+            // 
+            // lblPrimerApellido
+            // 
+            lblPrimerApellido.AutoSize = true;
+            lblPrimerApellido.Location = new Point(40, 153);
+            lblPrimerApellido.Name = "lblPrimerApellido";
+            lblPrimerApellido.Size = new Size(111, 20);
+            lblPrimerApellido.TabIndex = 4;
+            lblPrimerApellido.Text = "Primer apellido";
+            // 
+            // lblTipoDocumento
+            // 
+            lblTipoDocumento.AutoSize = true;
+            lblTipoDocumento.Location = new Point(40, 250);
+            lblTipoDocumento.Name = "lblTipoDocumento";
+            lblTipoDocumento.Size = new Size(140, 20);
+            lblTipoDocumento.TabIndex = 29;
+            lblTipoDocumento.Text = "Tipo de documento";
+            // 
+            // cboTipoDocumento
+            // 
+            cboTipoDocumento.FormattingEnabled = true;
+            cboTipoDocumento.Items.AddRange(new object[] { "MEDELLÍN", "CALI", "SABANETA", "BELLO", "EVIGADO ", "LA ESTRELLA" });
+            cboTipoDocumento.Location = new Point(235, 247);
+            cboTipoDocumento.Margin = new Padding(3, 4, 3, 4);
+            cboTipoDocumento.Name = "cboTipoDocumento";
+            cboTipoDocumento.Size = new Size(386, 28);
+            cboTipoDocumento.TabIndex = 28;
+            // 
+            // txtNumeroDocumento
+            // 
+            txtNumeroDocumento.Location = new Point(235, 300);
+            txtNumeroDocumento.Name = "txtNumeroDocumento";
+            txtNumeroDocumento.Size = new Size(386, 27);
+            txtNumeroDocumento.TabIndex = 31;
+            // 
+            // lblNumeroDocumento
+            // 
+            lblNumeroDocumento.AutoSize = true;
+            lblNumeroDocumento.Location = new Point(40, 300);
+            lblNumeroDocumento.Name = "lblNumeroDocumento";
+            lblNumeroDocumento.Size = new Size(164, 20);
+            lblNumeroDocumento.TabIndex = 30;
+            lblNumeroDocumento.Text = "Número de documento";
+            // 
+            // lblFechaNacimiento
+            // 
+            lblFechaNacimiento.AutoSize = true;
+            lblFechaNacimiento.Location = new Point(40, 362);
+            lblFechaNacimiento.Name = "lblFechaNacimiento";
+            lblFechaNacimiento.Size = new Size(146, 20);
+            lblFechaNacimiento.TabIndex = 33;
+            lblFechaNacimiento.Text = "Fecha de nacimiento";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker1.Location = new Point(235, 357);
+            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(386, 27);
+            dateTimePicker1.TabIndex = 32;
+            // 
+            // gbSexo
+            // 
+            gbSexo.Controls.Add(rdbMasculino);
+            gbSexo.Controls.Add(rdbFemenino);
+            gbSexo.Location = new Point(235, 413);
+            gbSexo.Margin = new Padding(3, 4, 3, 4);
+            gbSexo.Name = "gbSexo";
+            gbSexo.Padding = new Padding(3, 4, 3, 4);
+            gbSexo.Size = new Size(386, 57);
+            gbSexo.TabIndex = 36;
+            gbSexo.TabStop = false;
+            // 
+            // rdbMasculino
+            // 
+            rdbMasculino.AutoSize = true;
+            rdbMasculino.Location = new Point(207, 21);
+            rdbMasculino.Margin = new Padding(3, 4, 3, 4);
+            rdbMasculino.Name = "rdbMasculino";
+            rdbMasculino.Size = new Size(97, 24);
+            rdbMasculino.TabIndex = 8;
+            rdbMasculino.TabStop = true;
+            rdbMasculino.Text = "Masculino";
+            rdbMasculino.UseVisualStyleBackColor = true;
+            // 
+            // rdbFemenino
+            // 
+            rdbFemenino.AutoSize = true;
+            rdbFemenino.Location = new Point(88, 21);
+            rdbFemenino.Margin = new Padding(3, 4, 3, 4);
+            rdbFemenino.Name = "rdbFemenino";
+            rdbFemenino.Size = new Size(95, 24);
+            rdbFemenino.TabIndex = 7;
+            rdbFemenino.TabStop = true;
+            rdbFemenino.Text = "Femenino";
+            rdbFemenino.UseVisualStyleBackColor = true;
+            // 
+            // lblSexo
+            // 
+            lblSexo.AutoSize = true;
+            lblSexo.Location = new Point(40, 436);
+            lblSexo.Name = "lblSexo";
+            lblSexo.Size = new Size(41, 20);
+            lblSexo.TabIndex = 35;
+            lblSexo.Text = "Sexo";
             // 
             // FormularioEvaluacionActividadFisica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 486);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.gbSexo);
-            this.Controls.Add(this.gbCondicionEmocional);
-            this.Controls.Add(this.lblCondicionEmocional);
-            this.Controls.Add(this.txtTalla);
-            this.Controls.Add(this.lblTalla);
-            this.Controls.Add(this.txtPeso);
-            this.Controls.Add(this.lblPeso);
-            this.Controls.Add(this.lblCiudadEvaluacion);
-            this.Controls.Add(this.cboCiudadEvaluacion);
-            this.Controls.Add(this.lblSexo);
-            this.Controls.Add(this.chkCancer);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.chkDiabetes);
-            this.Controls.Add(this.lblFechaEvaluacion);
-            this.Controls.Add(this.dtpFechaEvaluacion);
-            this.Name = "FormularioEvaluacionActividadFisica";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Evaluación Actividad Física";
-            this.gbCondicionEmocional.ResumeLayout(false);
-            this.gbCondicionEmocional.PerformLayout();
-            this.gbSexo.ResumeLayout(false);
-            this.gbSexo.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1518, 739);
+            Controls.Add(gbEvaluacion);
+            Controls.Add(gbDatosBasicos);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnGuardar);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FormularioEvaluacionActividadFisica";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Evaluación Actividad Física";
+            gbDatosBasicos.ResumeLayout(false);
+            gbDatosBasicos.PerformLayout();
+            gbEvaluacion.ResumeLayout(false);
+            gbEvaluacion.PerformLayout();
+            gbCondicionEmocional.ResumeLayout(false);
+            gbCondicionEmocional.PerformLayout();
+            gbSexo.ResumeLayout(false);
+            gbSexo.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
-
-        private DateTimePicker dtpFechaEvaluacion;
-        private Label lblFechaEvaluacion;
-        private CheckBox chkDiabetes;
-        private Label label1;
-        private CheckBox chkCancer;
-        private Label lblSexo;
-        private ComboBox cboCiudadEvaluacion;
-        private Label lblCiudadEvaluacion;
-        private Label lblPeso;
-        private TextBox txtPeso;
+        private Button btnGuardar;
+        private Button btnCancelar;
+        private GroupBox gbDatosBasicos;
+        private GroupBox gbEvaluacion;
+        private Label lblFechaNacimiento;
+        private DateTimePicker dateTimePicker1;
+        private TextBox txtNumeroDocumento;
+        private Label lblNumeroDocumento;
+        private Label lblTipoDocumento;
+        private ComboBox cboTipoDocumento;
+        private TextBox txtSegundoApellido;
+        private Label lblSegundoApellido;
+        private TextBox txtPrimerApellido;
+        private Label lblPrimerApellido;
+        private TextBox txtSegundoNombre;
+        private Label lblSegundoNombre;
+        private TextBox txtPrimerNombre;
+        private Label lblPrimerNombre;
+        private GroupBox gbCondicionEmocional;
+        private RadioButton rdbAlegre;
+        private RadioButton rdbTriste;
+        private RadioButton rdbNormal;
+        private Label lblCondicionEmocional;
         private TextBox txtTalla;
         private Label lblTalla;
-        private Label lblCondicionEmocional;
-        private RadioButton rdbAlegre;
-        private RadioButton rdbNormal;
-        private RadioButton rdbTriste;
-        private GroupBox gbCondicionEmocional;
+        private TextBox txtPeso;
+        private Label lblPeso;
+        private Label lblCiudadEvaluacion;
+        private ComboBox cboCiudadEvaluacion;
+        private CheckBox chkCancer;
+        private Label label1;
+        private CheckBox chkDiabetes;
+        private Label lblFechaEvaluacion;
+        private DateTimePicker dtpFechaEvaluacion;
         private GroupBox gbSexo;
         private RadioButton rdbMasculino;
         private RadioButton rdbFemenino;
-        private Button btnGuardar;
-        private Button btnCancelar;
+        private Label lblSexo;
     }
 }
