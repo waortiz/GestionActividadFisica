@@ -28,9 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             btnGuardar = new Button();
             btnCancelar = new Button();
             gbDatosBasicos = new GroupBox();
+            gbSexo = new GroupBox();
+            rdbMasculino = new RadioButton();
+            rdbFemenino = new RadioButton();
+            lblSexo = new Label();
+            lblFechaNacimiento = new Label();
+            dtpFechaNacimiento = new DateTimePicker();
+            txtNumeroDocumento = new TextBox();
+            lblNumeroDocumento = new Label();
+            lblTipoDocumento = new Label();
+            cboTipoDocumento = new ComboBox();
+            txtSegundoApellido = new TextBox();
+            lblSegundoApellido = new Label();
+            txtPrimerApellido = new TextBox();
+            lblPrimerApellido = new Label();
+            txtSegundoNombre = new TextBox();
+            lblSegundoNombre = new Label();
+            txtPrimerNombre = new TextBox();
+            lblPrimerNombre = new Label();
             gbEvaluacion = new GroupBox();
             gbCondicionEmocional = new GroupBox();
             rdbAlegre = new RadioButton();
@@ -48,28 +67,12 @@
             chkDiabetes = new CheckBox();
             lblFechaEvaluacion = new Label();
             dtpFechaEvaluacion = new DateTimePicker();
-            lblPrimerNombre = new Label();
-            txtPrimerNombre = new TextBox();
-            txtSegundoNombre = new TextBox();
-            lblSegundoNombre = new Label();
-            txtSegundoApellido = new TextBox();
-            lblSegundoApellido = new Label();
-            txtPrimerApellido = new TextBox();
-            lblPrimerApellido = new Label();
-            lblTipoDocumento = new Label();
-            cboTipoDocumento = new ComboBox();
-            txtNumeroDocumento = new TextBox();
-            lblNumeroDocumento = new Label();
-            lblFechaNacimiento = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            gbSexo = new GroupBox();
-            rdbMasculino = new RadioButton();
-            rdbFemenino = new RadioButton();
-            lblSexo = new Label();
+            erpError = new ErrorProvider(components);
             gbDatosBasicos.SuspendLayout();
+            gbSexo.SuspendLayout();
             gbEvaluacion.SuspendLayout();
             gbCondicionEmocional.SuspendLayout();
-            gbSexo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)erpError).BeginInit();
             SuspendLayout();
             // 
             // btnGuardar
@@ -98,7 +101,7 @@
             gbDatosBasicos.Controls.Add(gbSexo);
             gbDatosBasicos.Controls.Add(lblSexo);
             gbDatosBasicos.Controls.Add(lblFechaNacimiento);
-            gbDatosBasicos.Controls.Add(dateTimePicker1);
+            gbDatosBasicos.Controls.Add(dtpFechaNacimiento);
             gbDatosBasicos.Controls.Add(txtNumeroDocumento);
             gbDatosBasicos.Controls.Add(lblNumeroDocumento);
             gbDatosBasicos.Controls.Add(lblTipoDocumento);
@@ -117,6 +120,169 @@
             gbDatosBasicos.TabIndex = 22;
             gbDatosBasicos.TabStop = false;
             gbDatosBasicos.Text = "Datos Básicos";
+            // 
+            // gbSexo
+            // 
+            gbSexo.Controls.Add(rdbMasculino);
+            gbSexo.Controls.Add(rdbFemenino);
+            gbSexo.Location = new Point(235, 413);
+            gbSexo.Margin = new Padding(3, 4, 3, 4);
+            gbSexo.Name = "gbSexo";
+            gbSexo.Padding = new Padding(3, 4, 3, 4);
+            gbSexo.Size = new Size(386, 57);
+            gbSexo.TabIndex = 36;
+            gbSexo.TabStop = false;
+            // 
+            // rdbMasculino
+            // 
+            rdbMasculino.AutoSize = true;
+            rdbMasculino.Location = new Point(207, 21);
+            rdbMasculino.Margin = new Padding(3, 4, 3, 4);
+            rdbMasculino.Name = "rdbMasculino";
+            rdbMasculino.Size = new Size(97, 24);
+            rdbMasculino.TabIndex = 8;
+            rdbMasculino.TabStop = true;
+            rdbMasculino.Text = "Masculino";
+            rdbMasculino.UseVisualStyleBackColor = true;
+            // 
+            // rdbFemenino
+            // 
+            rdbFemenino.AutoSize = true;
+            rdbFemenino.Location = new Point(88, 21);
+            rdbFemenino.Margin = new Padding(3, 4, 3, 4);
+            rdbFemenino.Name = "rdbFemenino";
+            rdbFemenino.Size = new Size(95, 24);
+            rdbFemenino.TabIndex = 7;
+            rdbFemenino.TabStop = true;
+            rdbFemenino.Text = "Femenino";
+            rdbFemenino.UseVisualStyleBackColor = true;
+            // 
+            // lblSexo
+            // 
+            lblSexo.AutoSize = true;
+            lblSexo.Location = new Point(40, 436);
+            lblSexo.Name = "lblSexo";
+            lblSexo.Size = new Size(41, 20);
+            lblSexo.TabIndex = 35;
+            lblSexo.Text = "Sexo";
+            // 
+            // lblFechaNacimiento
+            // 
+            lblFechaNacimiento.AutoSize = true;
+            lblFechaNacimiento.Location = new Point(40, 362);
+            lblFechaNacimiento.Name = "lblFechaNacimiento";
+            lblFechaNacimiento.Size = new Size(146, 20);
+            lblFechaNacimiento.TabIndex = 33;
+            lblFechaNacimiento.Text = "Fecha de nacimiento";
+            // 
+            // dtpFechaNacimiento
+            // 
+            dtpFechaNacimiento.Format = DateTimePickerFormat.Short;
+            dtpFechaNacimiento.Location = new Point(235, 357);
+            dtpFechaNacimiento.Margin = new Padding(3, 4, 3, 4);
+            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            dtpFechaNacimiento.Size = new Size(386, 27);
+            dtpFechaNacimiento.TabIndex = 32;
+            // 
+            // txtNumeroDocumento
+            // 
+            txtNumeroDocumento.Location = new Point(235, 300);
+            txtNumeroDocumento.Name = "txtNumeroDocumento";
+            txtNumeroDocumento.Size = new Size(386, 27);
+            txtNumeroDocumento.TabIndex = 31;
+            // 
+            // lblNumeroDocumento
+            // 
+            lblNumeroDocumento.AutoSize = true;
+            lblNumeroDocumento.Location = new Point(40, 300);
+            lblNumeroDocumento.Name = "lblNumeroDocumento";
+            lblNumeroDocumento.Size = new Size(164, 20);
+            lblNumeroDocumento.TabIndex = 30;
+            lblNumeroDocumento.Text = "Número de documento";
+            // 
+            // lblTipoDocumento
+            // 
+            lblTipoDocumento.AutoSize = true;
+            lblTipoDocumento.Location = new Point(40, 250);
+            lblTipoDocumento.Name = "lblTipoDocumento";
+            lblTipoDocumento.Size = new Size(140, 20);
+            lblTipoDocumento.TabIndex = 29;
+            lblTipoDocumento.Text = "Tipo de documento";
+            // 
+            // cboTipoDocumento
+            // 
+            cboTipoDocumento.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboTipoDocumento.FormattingEnabled = true;
+            cboTipoDocumento.Items.AddRange(new object[] { "MEDELLÍN", "CALI", "SABANETA", "BELLO", "EVIGADO ", "LA ESTRELLA" });
+            cboTipoDocumento.Location = new Point(235, 247);
+            cboTipoDocumento.Margin = new Padding(3, 4, 3, 4);
+            cboTipoDocumento.Name = "cboTipoDocumento";
+            cboTipoDocumento.Size = new Size(386, 28);
+            cboTipoDocumento.TabIndex = 28;
+            // 
+            // txtSegundoApellido
+            // 
+            txtSegundoApellido.Location = new Point(235, 200);
+            txtSegundoApellido.Name = "txtSegundoApellido";
+            txtSegundoApellido.Size = new Size(386, 27);
+            txtSegundoApellido.TabIndex = 7;
+            // 
+            // lblSegundoApellido
+            // 
+            lblSegundoApellido.AutoSize = true;
+            lblSegundoApellido.Location = new Point(40, 207);
+            lblSegundoApellido.Name = "lblSegundoApellido";
+            lblSegundoApellido.Size = new Size(127, 20);
+            lblSegundoApellido.TabIndex = 6;
+            lblSegundoApellido.Text = "Segundo apellido";
+            // 
+            // txtPrimerApellido
+            // 
+            txtPrimerApellido.Location = new Point(235, 146);
+            txtPrimerApellido.Name = "txtPrimerApellido";
+            txtPrimerApellido.Size = new Size(386, 27);
+            txtPrimerApellido.TabIndex = 5;
+            // 
+            // lblPrimerApellido
+            // 
+            lblPrimerApellido.AutoSize = true;
+            lblPrimerApellido.Location = new Point(40, 153);
+            lblPrimerApellido.Name = "lblPrimerApellido";
+            lblPrimerApellido.Size = new Size(111, 20);
+            lblPrimerApellido.TabIndex = 4;
+            lblPrimerApellido.Text = "Primer apellido";
+            // 
+            // txtSegundoNombre
+            // 
+            txtSegundoNombre.Location = new Point(235, 97);
+            txtSegundoNombre.Name = "txtSegundoNombre";
+            txtSegundoNombre.Size = new Size(386, 27);
+            txtSegundoNombre.TabIndex = 3;
+            // 
+            // lblSegundoNombre
+            // 
+            lblSegundoNombre.AutoSize = true;
+            lblSegundoNombre.Location = new Point(40, 104);
+            lblSegundoNombre.Name = "lblSegundoNombre";
+            lblSegundoNombre.Size = new Size(124, 20);
+            lblSegundoNombre.TabIndex = 2;
+            lblSegundoNombre.Text = "Segundo nombre";
+            // 
+            // txtPrimerNombre
+            // 
+            txtPrimerNombre.Location = new Point(235, 43);
+            txtPrimerNombre.Name = "txtPrimerNombre";
+            txtPrimerNombre.Size = new Size(386, 27);
+            txtPrimerNombre.TabIndex = 1;
+            // 
+            // lblPrimerNombre
+            // 
+            lblPrimerNombre.AutoSize = true;
+            lblPrimerNombre.Location = new Point(40, 50);
+            lblPrimerNombre.Name = "lblPrimerNombre";
+            lblPrimerNombre.Size = new Size(108, 20);
+            lblPrimerNombre.TabIndex = 0;
+            lblPrimerNombre.Text = "Primer nombre";
             // 
             // gbEvaluacion
             // 
@@ -205,6 +371,7 @@
             txtTalla.Name = "txtTalla";
             txtTalla.Size = new Size(386, 27);
             txtTalla.TabIndex = 31;
+            txtTalla.KeyPress += txtTalla_KeyPress;
             // 
             // lblTalla
             // 
@@ -222,6 +389,7 @@
             txtPeso.Name = "txtPeso";
             txtPeso.Size = new Size(386, 27);
             txtPeso.TabIndex = 29;
+            txtPeso.KeyPress += txtPeso_KeyPress;
             // 
             // lblPeso
             // 
@@ -243,6 +411,7 @@
             // 
             // cboCiudadEvaluacion
             // 
+            cboCiudadEvaluacion.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCiudadEvaluacion.FormattingEnabled = true;
             cboCiudadEvaluacion.Items.AddRange(new object[] { "MEDELLÍN", "CALI", "SABANETA", "BELLO", "EVIGADO ", "LA ESTRELLA" });
             cboCiudadEvaluacion.Location = new Point(217, 178);
@@ -300,167 +469,9 @@
             dtpFechaEvaluacion.Size = new Size(386, 27);
             dtpFechaEvaluacion.TabIndex = 20;
             // 
-            // lblPrimerNombre
+            // erpError
             // 
-            lblPrimerNombre.AutoSize = true;
-            lblPrimerNombre.Location = new Point(40, 50);
-            lblPrimerNombre.Name = "lblPrimerNombre";
-            lblPrimerNombre.Size = new Size(108, 20);
-            lblPrimerNombre.TabIndex = 0;
-            lblPrimerNombre.Text = "Primer nombre";
-            // 
-            // txtPrimerNombre
-            // 
-            txtPrimerNombre.Location = new Point(235, 43);
-            txtPrimerNombre.Name = "txtPrimerNombre";
-            txtPrimerNombre.Size = new Size(386, 27);
-            txtPrimerNombre.TabIndex = 1;
-            // 
-            // txtSegundoNombre
-            // 
-            txtSegundoNombre.Location = new Point(235, 97);
-            txtSegundoNombre.Name = "txtSegundoNombre";
-            txtSegundoNombre.Size = new Size(386, 27);
-            txtSegundoNombre.TabIndex = 3;
-            // 
-            // lblSegundoNombre
-            // 
-            lblSegundoNombre.AutoSize = true;
-            lblSegundoNombre.Location = new Point(40, 104);
-            lblSegundoNombre.Name = "lblSegundoNombre";
-            lblSegundoNombre.Size = new Size(124, 20);
-            lblSegundoNombre.TabIndex = 2;
-            lblSegundoNombre.Text = "Segundo nombre";
-            // 
-            // txtSegundoApellido
-            // 
-            txtSegundoApellido.Location = new Point(235, 200);
-            txtSegundoApellido.Name = "txtSegundoApellido";
-            txtSegundoApellido.Size = new Size(386, 27);
-            txtSegundoApellido.TabIndex = 7;
-            // 
-            // lblSegundoApellido
-            // 
-            lblSegundoApellido.AutoSize = true;
-            lblSegundoApellido.Location = new Point(40, 207);
-            lblSegundoApellido.Name = "lblSegundoApellido";
-            lblSegundoApellido.Size = new Size(111, 20);
-            lblSegundoApellido.TabIndex = 6;
-            lblSegundoApellido.Text = "Primer apellido";
-            // 
-            // txtPrimerApellido
-            // 
-            txtPrimerApellido.Location = new Point(235, 146);
-            txtPrimerApellido.Name = "txtPrimerApellido";
-            txtPrimerApellido.Size = new Size(386, 27);
-            txtPrimerApellido.TabIndex = 5;
-            // 
-            // lblPrimerApellido
-            // 
-            lblPrimerApellido.AutoSize = true;
-            lblPrimerApellido.Location = new Point(40, 153);
-            lblPrimerApellido.Name = "lblPrimerApellido";
-            lblPrimerApellido.Size = new Size(111, 20);
-            lblPrimerApellido.TabIndex = 4;
-            lblPrimerApellido.Text = "Primer apellido";
-            // 
-            // lblTipoDocumento
-            // 
-            lblTipoDocumento.AutoSize = true;
-            lblTipoDocumento.Location = new Point(40, 250);
-            lblTipoDocumento.Name = "lblTipoDocumento";
-            lblTipoDocumento.Size = new Size(140, 20);
-            lblTipoDocumento.TabIndex = 29;
-            lblTipoDocumento.Text = "Tipo de documento";
-            // 
-            // cboTipoDocumento
-            // 
-            cboTipoDocumento.FormattingEnabled = true;
-            cboTipoDocumento.Items.AddRange(new object[] { "MEDELLÍN", "CALI", "SABANETA", "BELLO", "EVIGADO ", "LA ESTRELLA" });
-            cboTipoDocumento.Location = new Point(235, 247);
-            cboTipoDocumento.Margin = new Padding(3, 4, 3, 4);
-            cboTipoDocumento.Name = "cboTipoDocumento";
-            cboTipoDocumento.Size = new Size(386, 28);
-            cboTipoDocumento.TabIndex = 28;
-            // 
-            // txtNumeroDocumento
-            // 
-            txtNumeroDocumento.Location = new Point(235, 300);
-            txtNumeroDocumento.Name = "txtNumeroDocumento";
-            txtNumeroDocumento.Size = new Size(386, 27);
-            txtNumeroDocumento.TabIndex = 31;
-            // 
-            // lblNumeroDocumento
-            // 
-            lblNumeroDocumento.AutoSize = true;
-            lblNumeroDocumento.Location = new Point(40, 300);
-            lblNumeroDocumento.Name = "lblNumeroDocumento";
-            lblNumeroDocumento.Size = new Size(164, 20);
-            lblNumeroDocumento.TabIndex = 30;
-            lblNumeroDocumento.Text = "Número de documento";
-            // 
-            // lblFechaNacimiento
-            // 
-            lblFechaNacimiento.AutoSize = true;
-            lblFechaNacimiento.Location = new Point(40, 362);
-            lblFechaNacimiento.Name = "lblFechaNacimiento";
-            lblFechaNacimiento.Size = new Size(146, 20);
-            lblFechaNacimiento.TabIndex = 33;
-            lblFechaNacimiento.Text = "Fecha de nacimiento";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(235, 357);
-            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(386, 27);
-            dateTimePicker1.TabIndex = 32;
-            // 
-            // gbSexo
-            // 
-            gbSexo.Controls.Add(rdbMasculino);
-            gbSexo.Controls.Add(rdbFemenino);
-            gbSexo.Location = new Point(235, 413);
-            gbSexo.Margin = new Padding(3, 4, 3, 4);
-            gbSexo.Name = "gbSexo";
-            gbSexo.Padding = new Padding(3, 4, 3, 4);
-            gbSexo.Size = new Size(386, 57);
-            gbSexo.TabIndex = 36;
-            gbSexo.TabStop = false;
-            // 
-            // rdbMasculino
-            // 
-            rdbMasculino.AutoSize = true;
-            rdbMasculino.Location = new Point(207, 21);
-            rdbMasculino.Margin = new Padding(3, 4, 3, 4);
-            rdbMasculino.Name = "rdbMasculino";
-            rdbMasculino.Size = new Size(97, 24);
-            rdbMasculino.TabIndex = 8;
-            rdbMasculino.TabStop = true;
-            rdbMasculino.Text = "Masculino";
-            rdbMasculino.UseVisualStyleBackColor = true;
-            // 
-            // rdbFemenino
-            // 
-            rdbFemenino.AutoSize = true;
-            rdbFemenino.Location = new Point(88, 21);
-            rdbFemenino.Margin = new Padding(3, 4, 3, 4);
-            rdbFemenino.Name = "rdbFemenino";
-            rdbFemenino.Size = new Size(95, 24);
-            rdbFemenino.TabIndex = 7;
-            rdbFemenino.TabStop = true;
-            rdbFemenino.Text = "Femenino";
-            rdbFemenino.UseVisualStyleBackColor = true;
-            // 
-            // lblSexo
-            // 
-            lblSexo.AutoSize = true;
-            lblSexo.Location = new Point(40, 436);
-            lblSexo.Name = "lblSexo";
-            lblSexo.Size = new Size(41, 20);
-            lblSexo.TabIndex = 35;
-            lblSexo.Text = "Sexo";
+            erpError.ContainerControl = this;
             // 
             // FormularioEvaluacionActividadFisica
             // 
@@ -475,14 +486,16 @@
             Name = "FormularioEvaluacionActividadFisica";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Evaluación Actividad Física";
+            Load += FormularioEvaluacionActividadFisica_Load;
             gbDatosBasicos.ResumeLayout(false);
             gbDatosBasicos.PerformLayout();
+            gbSexo.ResumeLayout(false);
+            gbSexo.PerformLayout();
             gbEvaluacion.ResumeLayout(false);
             gbEvaluacion.PerformLayout();
             gbCondicionEmocional.ResumeLayout(false);
             gbCondicionEmocional.PerformLayout();
-            gbSexo.ResumeLayout(false);
-            gbSexo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)erpError).EndInit();
             ResumeLayout(false);
         }
 
@@ -492,7 +505,7 @@
         private GroupBox gbDatosBasicos;
         private GroupBox gbEvaluacion;
         private Label lblFechaNacimiento;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpFechaNacimiento;
         private TextBox txtNumeroDocumento;
         private Label lblNumeroDocumento;
         private Label lblTipoDocumento;
@@ -525,5 +538,6 @@
         private RadioButton rdbMasculino;
         private RadioButton rdbFemenino;
         private Label lblSexo;
+        private ErrorProvider erpError;
     }
 }
