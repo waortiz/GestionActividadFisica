@@ -80,6 +80,7 @@ namespace GestionActividadFisica
                         SegundoApellido = segundoApellido,
                         Sexo = sexo,
                         TipoDocumento = tipoDocumento,
+                        NumeroDocumento = numeroDocumento,
                         FechaNacimiento = fechaNacimiento
                     },
                     Fecha = fechaEvaluacion,

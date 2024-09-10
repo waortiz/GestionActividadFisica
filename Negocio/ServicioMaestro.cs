@@ -14,7 +14,7 @@ namespace Negocio
 
         public ServicioMaestro()
         {
-            repositorio = new RepositorioMaestro();
+            repositorio = new RepositorioMaestroADO();
         }
 
         public List<Ciudad> ObtenerCiudades()
