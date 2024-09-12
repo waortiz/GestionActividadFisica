@@ -215,5 +215,10 @@ namespace GestionActividadFisica
                 e.Handled = true;
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
