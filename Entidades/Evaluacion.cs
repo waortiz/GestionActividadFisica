@@ -2,6 +2,7 @@
 {
     public class Evaluacion
     {
+        public long Id { get; set; }
         public DateTime Fecha {  get; set; }
         public Persona Persona { get; set; }
         public bool AntecendenteDiabetes { get; set; }

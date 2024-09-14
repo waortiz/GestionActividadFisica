@@ -14,7 +14,7 @@ namespace Negocio
 
         public ServicioEvaluacion()
         {
-            repositorio = new RepositorioEvaluacion();
+            repositorio = new RepositorioEvaluacionEF();
         }
 
         public void GuardarEvaluacion(Evaluacion evaluacion)

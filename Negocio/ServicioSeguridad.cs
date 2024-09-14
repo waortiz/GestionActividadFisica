@@ -14,7 +14,7 @@ namespace Negocio
 
         public ServicioSeguridad()
         {
-            repositorio = new RepositorioSeguridad();
+            repositorio = new RepositorioSeguridadEF();
         }
 
         public bool ValidarUsuario(Usuario usuario)

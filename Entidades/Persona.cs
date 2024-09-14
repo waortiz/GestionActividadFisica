@@ -2,7 +2,7 @@
 {
     public class Persona
     {
-        public long IdPersona { get; set; }
+        public long Id { get; set; }
         public string PrimerNombre { get; set; }
         public string SegundoNombre { get; set; }
         public string PrimerApellido { get; set; }

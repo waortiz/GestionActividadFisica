@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Modelos
 {
     [Table("Personas")]
     public class Persona
     {
+        [Key]
         public int Id { get; set; }
         public string PrimerNombre { get; set; }
         public string SegundoNombre { get; set; }
@@ -16,5 +18,7 @@ namespace Modelos
         public virtual TipoDocumento TipoDocumento { get; set; }
         public int IdSexo { get; set; }
         public virtual Sexo Sexo { get; set; }
+        public virtual ICollection<Usuario> Usuarios { get; set; }
+        public virtual ICollection<Evaluacion> Evaluaciones { get; set; }
     }
 }
